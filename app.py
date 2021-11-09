@@ -30,4 +30,4 @@ def check_bike_status():
 
 @app.route('/health')
 def health_endpoint():
-    return {'health': True}
+    return json.dumps({'health': True}), 200, {'ContentType':'application/json'} 
