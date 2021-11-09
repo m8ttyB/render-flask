@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: mysite
+    name: flask-bikes
     env: python
     buildCommand: "./build.sh"
     startCommand: "gunicorn app:app"
