@@ -3,4 +3,4 @@ services:
     name: mysite
     env: python
     buildCommand: "./build.sh"
-    startCommand: "unicorn app:app"
+    startCommand: "gunicorn app:app"
