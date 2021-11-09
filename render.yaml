@@ -4,3 +4,4 @@ services:
     env: python
     buildCommand: "./build.sh"
     startCommand: "gunicorn app:app"
+    healthCheckPath: /health

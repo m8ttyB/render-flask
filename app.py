@@ -1,5 +1,5 @@
 import bike
-
+import json
 from flask import Flask
 
 app = Flask(__name__)
@@ -22,6 +22,12 @@ data = {
 def hello_world():
     return 'Hello, World!'
 
+
 @app.route('/bikes')
 def check_bike_status():
     return bike.check_bikes(data)
+
+
+@app.route('/health')
+def health_endpoint():
+    return {'health': True}
