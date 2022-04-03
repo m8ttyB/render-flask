@@ -20,7 +20,7 @@ data = {
 
 @app.route('/')
 def hello_world():
-    return 'Hello, World!'
+    return 'Bikes!'
 
 
 @app.route('/bikes')
